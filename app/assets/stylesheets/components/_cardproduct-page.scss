@@ -1,18 +1,25 @@
 .card-product-page {
   overflow: hidden;
-  height: 120px;
+  height: 160px;
   weight: 300px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
-  background: #C9C9EE;
+  background: white;
 }
 
 .card-product-page img {
   height: 100%;
   width: 120px;
   object-fit: cover;
+  transition: transform .5s, filter 0.5s ease-in-out;
+  filter: grayscale(40%);
+}
+
+.card-product-page:hover img {
+filter: grayscale(0);
+transform: scale(1.1);
 }
 
 .card-product-page h2 {
