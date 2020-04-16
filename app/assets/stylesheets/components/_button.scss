@@ -1,6 +1,6 @@
 .btn-ghost {
-  color: #4A4A4A;
-  border: 1px solid #4A4A4A;
+  color: white;
+  border: 1px solid white;
   padding: 8px 24px;
   border-radius: 50px;
   font-weight: lighter;
@@ -32,7 +32,7 @@
   padding: 8px 24px;
   border-radius: 4px;
   font-weight: bold;
-  background: linear-gradient(#412234, #B49FCC);
+  background: linear-gradient(#48A9A6, #053225);
   transition: background 0.3s ease;
   // position: absolute;
   // text-align: center;
@@ -44,7 +44,7 @@
 }
 
 .btn-gradient:hover {
-  background: linear-gradient(#F6CACA, #CD9FCC);
+  background: linear-gradient(#48A9A6);
   color: white;
   text-decoration: none;
 }
