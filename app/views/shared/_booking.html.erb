@@ -1,15 +1,21 @@
+<div class="card-booking">
 
-<div class="booking-card">
-  <div class="booking-card-infos">
-    <% if (booking.job.ends_at < Time.now) && (booking.status == "confirmed") %>
-      <h2>Completed</h2>
-    <% else %>
-      <h2><%= booking.status %></h2>
-    <% end %>
+      <img src= "https://images.unsplash.com/photo-1535722339661-7f22185bc7ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80">
+
+  <div class="card-booking-infos">
+    <div >
+
     <h2><%= booking.sitter.name %></h2>
     <p><%= booking.sitter.location %></p>
-    <% if (booking.job.ends_at < Time.now) && (booking.status == "confirmed") %>
-      <p><%= link_to "Write a review", new_sitter_review_path(booking.sitter), class: "btn-gradient book-button" %></p>
+    </div>
+     <h3>Completed</h3>
+      <% if (booking.job.ends_at < Time.now) && (booking.status == "confirmed") %>
+    <% else %>
+      <p><%= booking.status %></p>
+    <% end %>
+    <div ><% if (booking.job.ends_at < Time.now) && (booking.status == "confirmed") %></div>
+      <p><%= link_to "Write a review", new_sitter_review_path(booking.sitter), class: "btn btn-flat" %></p>
     <% end %>
   </div>
 </div>
+
