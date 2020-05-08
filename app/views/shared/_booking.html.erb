@@ -14,7 +14,7 @@
       <p><%= booking.status %></p>
     <% end %>
     <div ><% if (booking.job.ends_at < Time.now) && (booking.status == "confirmed") %></div>
-      <p><%= link_to "Write a review", new_sitter_review_path(booking.sitter), class: "btn btn-flat" %></p>
+      <p><%= link_to "Write a review", new_sitter_review_path(booking.sitter), class: "btn btn-flat-booking" %></p>
     <% end %>
   </div>
 </div>

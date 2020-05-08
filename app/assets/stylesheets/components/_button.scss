@@ -28,6 +28,23 @@
   opacity: 0.6;
 }
 
+.btn-flat-booking {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #48A9A6;
+  transition: background 0.3s ease;
+  margin-bottom: 20px;
+  margin-left: 60px;
+
+}
+
+.btn-flat-booking:hover {
+  background: #48A9A6;
+  color: white;
+  opacity: 0.6;
+}
+
 .btn-gradient {
   color: white;
   padding: 8px 24px;
