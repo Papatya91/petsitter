@@ -12,7 +12,7 @@
             <%= f.button :submit, class: 'btn btn-flat' %>
           <% end %>
          </div>
-         <div class="booking-card">
+         <div class="myprofile-card">
           <h2><%= "Name: #{@sitter_profile.name}" %></h2>
           <p><%= "Location: #{@sitter_profile.location}" %></p>
           <h2><%= "Average rating: #{@sitter_review.sum(:rate).to_f / @sitter_review.count}" %></h2>
